@@ -13,11 +13,12 @@ header {
 }
 .sections-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 100px;
 }
 .transfer-money {
-  margin-right: 15px;
+  margin: 0 15px 15px;
   width: 250px;
   display: inline-block;
 }
