@@ -1,0 +1,30 @@
+
+<pt-card title="Recent Transactions" icon="briefcase">
+  <section class="top-section">
+    <pt-input-text class="top-section__search" placeholder="Search by typing..."
+      [dataFormControl]="searchField">
+      <span tabindex="0" *ngIf="searchField.value" class="search-clear-icon" (click)="searchField.setValue('')">x</span>
+    </pt-input-text>
+    <label class="top-section__label font-reg">Sort by</label>
+    <button class="top-section__button" 
+            [ngClass]="sortBy === 'transactionDate' && sortDir"
+            (click)="updateSort('transactionDate')">DATE</button>
+    <button class="top-section__button" [ngClass]="sortBy === 'merchant' && sortDir"
+            (click)="updateSort('merchant')">BENEFICIARY</button>
+    <button class="top-section__button" [ngClass]="sortBy === 'amount' && sortDir" 
+            (click)="updateSort('amount')">AMOUNT</button>
+  </section>
+  <div *ngFor="let trans of transactions | filterTransactions : searchField.value: sortBy: sortDir" class="trans" [style.border-left]="'7px solid ' + trans.categoryCode">
+    <span class="trans__date">{{convertDate(trans.transactionDate)}}</span>
+    <div class="trans__logo">
+      <img *ngIf="trans.merchantLogo" [src]="trans.merchantLogo"/>
+    </div>
+    <div class="trans__merchant"> 
+      <span class="font-light">{{trans.merchant}}</span>
+      <span class="trans__merchant__trans-type">
+        {{trans.transactionType}}
+      </span>
+    </div>
+    <span class="trans__amount font-reg">-{{trans.amount | currency}}</span>
+  </div>  
+</pt-card>

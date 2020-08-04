@@ -1,0 +1,21 @@
+:host {
+  position: relative;
+}
+input {
+  // padding: 5px;
+  padding-left: 0;
+  border: none;
+  border-bottom: 1px solid darkgrey;
+  outline: none;
+  width: 100%;
+  &.input-error {
+    border-bottom: 1px solid red;
+  }
+  &.has-left-symbol {
+    padding-left: 10px;
+  }
+}
+.left-symbol {
+  position: absolute;
+  top: 0;
+}

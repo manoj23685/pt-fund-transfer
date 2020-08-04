@@ -1,0 +1,40 @@
+
+<pt-card title="Make a transfer" icon="arrows">
+  <p class="top-error" *ngIf="fundTransferForm.invalid && submitButtonClicked">
+    Please correct the errors below.
+  </p>
+  <form [formGroup]="fundTransferForm" (ngSubmit)="onSubmit()">
+    <div class="input-section">
+      <label class="font-reg">FROM ACCOUNT</label>
+      <pt-input-text [dataFormControl]="fromAccountCtrl">
+      </pt-input-text>
+    </div>
+
+    <div class="input-section">
+      <label class="font-reg">TO ACCOUNT</label>
+      <pt-input-text [dataFormControl]="toAccountCtrl">
+        <p class="error-msg" *ngIf="toAccountCtrl.errors && toAccountCtrl.touched">
+            <ng-container *ngIf="toAccountCtrl.errors.required">
+              Please enter beneficiary account.
+            </ng-container>
+        </p>
+      </pt-input-text>
+    </div>
+
+    <div class="input-section">
+      <label class="font-reg">AMOUNT</label>
+      <pt-input-text [dataFormControl]="amountCtrl" class="amount-input" leftSymbol="$">
+        <p class="error-msg" *ngIf="amountCtrl.errors && amountCtrl.touched">
+          <ng-container *ngIf="amountCtrl.errors.required">
+            Please enter amount.
+          </ng-container>
+          <ng-container *ngIf="amountCtrl.errors.overdraftExceeded">
+            Please enter a lesser amount. Overdraft limit is exceeded. 
+          </ng-container>
+        </p>
+      </pt-input-text>
+    </div>
+
+    <input class="submit-btn" type="submit" value="Submit"/>
+  </form>
+</pt-card>

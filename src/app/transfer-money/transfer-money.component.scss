@@ -1,0 +1,51 @@
+:host {
+  display: inline-flex;
+}
+
+header {
+  background: #0C8396;
+  color: white;
+  padding: 8px;
+}
+
+.container {
+  width: 200px;
+  padding: 16px;
+  background: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.error-msg {
+  margin: 5px 0 0;
+  color: red;
+}
+
+.top-error {
+  color: red;
+}
+
+.submit-btn {
+  padding: 5px 30px;
+  align-self: flex-end;
+  color: white;
+  background: #EE7032;
+  border: none;
+  border-radius: 2px;
+}
+
+// .amount-input {
+//   display: flex;
+//   &:before {
+//     content: '$';
+//     position: absolute;
+//   }
+// }
+

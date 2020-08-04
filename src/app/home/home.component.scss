@@ -1,0 +1,23 @@
+.container {
+  background-image: url('../../assets/background.jpg');
+  min-height: 100vh;
+  background-size: cover;
+}
+header {
+  background: white;
+  padding: 10px;
+  img {
+    height: 30px;
+    margin-left: 60px;
+  }
+}
+.sections-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.transfer-money {
+  margin-right: 15px;
+  width: 250px;
+  display: inline-block;
+}

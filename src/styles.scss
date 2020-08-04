@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../src/assets/fonts/fonts.scss';
+
+body {
+  font-family: kanitExtraLight;
+}
+.font-thin {
+  font-family: kanitThin;
+}
+.font-extraLight {
+  font-family: kanitExtraLight;
+}
+.font-light {
+  font-family: kanitLight;
+}
+.font-reg {
+  font-family: kanitRegular;
+}
+.font-med {
+  font-family: kanitMedium;
+}

@@ -1,0 +1,6 @@
+<input type="text" [placeholder]="placeholder" 
+  [class.input-error]="dataFormControl.errors && dataFormControl.touched"
+  [class.has-left-symbol]="leftSymbol"
+  [formControl]="dataFormControl" [value]="value" [disabled]="disabled || null"/>
+<span *ngIf="leftSymbol" class="left-symbol">{{leftSymbol}}</span>  
+<ng-content></ng-content>
