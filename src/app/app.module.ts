@@ -6,7 +6,6 @@ import { EffectsModule } from '@ngrx/effects';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
 import { environment } from '../environments/environment';
 import { TransferMoneyModule } from './transfer-money/transfer-money.module';
 import { TransactionsListModule } from './transactions-list/transactions-list.module';
@@ -14,8 +13,7 @@ import { reducers, metaReducers } from './core/store/core.state';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HomeComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,

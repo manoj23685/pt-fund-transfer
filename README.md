@@ -24,17 +24,16 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 ## Application structure
 
-HomeComponent is the main landing container component.
-It contains: 
+AppComponent contains:
 1. TransactionList component, which displays the list of transactions. This is always shown.  
 2. A router outlet that switches between 2 components: TransferMoney and Preview  
 
 TransferMoney component is shown on page load, which accepts user inputs.
-If all the validations are passed, the submit button leads to PreviewComponent.
+If all the validations are passed, the submit button leads to PreviewComponent.  
 
-On clicking Transfer on Preview, new transaction is added to the Transaction list. 
+On clicking Transfer on Preview, new transaction is added to the Transaction list.   
 
-NgRx is being used for state management.
-Main AppState along with 2 feature states TransferMoneyState and TransactionListState are being used. 
+NgRx is being used for state management.  
+Main AppState along with 2 feature states TransferMoneyState and TransactionListState are being used.  
 
 
