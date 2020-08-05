@@ -7,7 +7,10 @@ Peachtree Fund Transfer application.
 
 ## Set up and run/test the app
 
-Click on https://manoj23685.github.io/pt-fund-transfer/transfer to launch the deployed app.  
+The app is deployed in below urls:  
+English: https://manoj23685.github.io/pt-fund-transfer/en-CA/  
+French: https://manoj23685.github.io/pt-fund-transfer/fr/  
+
 To set it up in local:
 1.download the code from develop  
 2.npm install  
