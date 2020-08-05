@@ -17,7 +17,6 @@ export class TransferMoneyValidator {
       return this.store.select(getCurrentBalance).pipe(
         map(balance => {
           const diff = Number(balance) - Number(control.value);
-          console.log('diff', diff);
           if (diff < -500) {
             return {overdraftExceeded: true}
           } 

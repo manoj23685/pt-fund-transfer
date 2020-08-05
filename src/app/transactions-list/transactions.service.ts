@@ -11,8 +11,6 @@ export class TransactionsService {
   constructor() {}
 
   getTransactions() {
-    const t = transactions.data;
-    console.log('getTransactions', transactions.data);
-    return of(t);
+    return of(transactions.data);
   }
 }

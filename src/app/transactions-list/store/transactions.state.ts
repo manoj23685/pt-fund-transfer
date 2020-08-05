@@ -26,8 +26,3 @@ export const getTransactionsStatus = createSelector(
   getTransactionsFeatureState, 
   (state: TransactionsFeatureState) => state.transactionsState.transactionsStatus
 );
-
-// export const getLastTransactionAmount = createSelector(
-//   getTransactionsFeatureState, 
-//   (state: TransactionsFeatureState) => state.transactionsState.lastTransactionAmount
-// );

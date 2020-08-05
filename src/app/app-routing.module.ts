@@ -6,9 +6,6 @@ import { TransferMoneyComponent } from './transfer-money/transfer-money.componen
 import { PreviewComponent } from './transfer-money/preview/preview.component';
 
 const routes: Routes = [
-  // { path: '', redirectTo: '/transfer', pathMatch: 'full' },
-  // { path: 'transfer', component: HomeComponent }
-
   { path: '',
     component: HomeComponent,
     children: [

@@ -4,29 +4,14 @@ import { FormControl, ControlValueAccessor } from '@angular/forms';
 @Component({
   selector: 'pt-input-text',
   templateUrl: './input-text.component.html',
-  styleUrls: ['./input-text.component.scss'],
-  // host: {
-  //   'attr.placeholder': 'placeholder'
-  // }
+  styleUrls: ['./input-text.component.scss']
 })
 export class InputTextComponent implements OnInit, ControlValueAccessor {
 
-  // _value: string;
-  // @Input() set value(val){
-  //   this._value = val;
-  //   // this.writeValue(val);
-  // }
-  // get value() {
-  //   return this._value;
-  // }
-  
   @Input() placeholder: string = '';
   @Input() leftSymbol: string;
   @Input() dataFormControl: FormControl;
 
-  // @ContentChild(string) value: string; 
-
-  // controlValue;
   value;
   disabled: boolean;
   onTouched = () => {};
@@ -34,13 +19,10 @@ export class InputTextComponent implements OnInit, ControlValueAccessor {
   
   constructor() { }
 
-  ngOnInit(): void {
-  }
+  ngOnInit() {}
 
   writeValue(obj: string): void {
-    console.log('write', obj);
     this.value = obj;
-    // this.onChange(this.value);
   }
   registerOnChange(fn: any): void {
     this.onChange = fn;

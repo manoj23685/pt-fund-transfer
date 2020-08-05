@@ -4,26 +4,37 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Peachtree Fund Transfer application.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Set up and run/test the app
 
-## Code scaffolding
+Click on https://manoj23685.github.io/pt-fund-transfer/transfer to launch the deployed app.
+To set it up in local:
+1.download the code from develop
+2.npm install
+3.npm start
+4.open http://localhost://4200
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To test:
+npm run test 
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Application structure
+
+HomeComponent is the main landing container component.
+It contains: 
+1. TransactionList component, which displays the list of transactions. This is always shown.
+2. A router outlet that switches between 2 components: TransferMoney and Preview
+
+TransferMoney component is shown on page load, which accepts user inputs.
+If all the validations are passed, the submit button leads to PreviewComponent.
+
+On clicking Transfer on Preview, new transaction is added to the Transaction list. 
+
+NgRx is being used for state management.
+Main AppState along with 2 feature states TransferMoneyState and TransactionListState are being used. 
+
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

@@ -2,7 +2,6 @@
 import { Actions, Effect, ofType } from "@ngrx/effects";
 import { switchMap, map } from "rxjs/operators";
 import { Injectable } from "@angular/core";
-import { of } from "rxjs";
 import { Store } from "@ngrx/store";
 
 import * as fromTransactions from './transactions.actions';
