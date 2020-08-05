@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+  <file source-language="en-CA" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="transListSearchInputPlaceholder" datatype="html">
+        <source>Search by typing...</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="transListSortBy" datatype="html">
         <source>Sort by</source>
         <context-group purpose="location">
@@ -28,6 +35,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="transListCardTitle" datatype="html">
+        <source>Recent Transactions</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
       <trans-unit id="ptLogoAltTxt" datatype="html">
@@ -104,6 +118,13 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transfer-money/transfer-money.component.html</context>
           <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tranMonCardTitle" datatype="html">
+        <source>Make a transfer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/transfer-money/transfer-money.component.html</context>
+          <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
     </body>

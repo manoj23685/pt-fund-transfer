@@ -2,9 +2,17 @@
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
   <file source-language="en-US" datatype="plaintext" original="ng2.template">
     <body>
+      <trans-unit id="transListSearchInputPlaceholder" datatype="html">
+        <source>Search by typing...</source>
+        <target>[FR] Search by typing...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="transListSortBy" datatype="html">
         <source>Sort by</source>
-        <target>Sort by</target>
+        <target>[FR] Sort by</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">9</context>
@@ -12,7 +20,7 @@
       </trans-unit>
       <trans-unit id="transListDateBtn" datatype="html">
         <source>DATE</source>
-        <target>DATE</target>
+        <target>[FR] DATE</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">12</context>
@@ -20,7 +28,7 @@
       </trans-unit>
       <trans-unit id="transListBeneBtn" datatype="html">
         <source>BENEFICIARY</source>
-        <target>BENEFICIARY</target>
+        <target>[FR] BENEFICIARY</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">14</context>
@@ -28,15 +36,23 @@
       </trans-unit>
       <trans-unit id="transListAmountBtn" datatype="html">
         <source>AMOUNT</source>
-        <target>AMOUNT</target>
+        <target>[FR] AMOUNT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transactions-list/transactions-list.component.html</context>
           <context context-type="linenumber">16</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="transListCardTitle" datatype="html">
+        <source>Recent Transactions</source>
+        <target>[FR] Recent Transactions</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/transactions-list/transactions-list.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="ptLogoAltTxt" datatype="html">
         <source>Peachtree Bank</source>
-        <target>Peachtree Bank</target>
+        <target>[FR] Peachtree Bank</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/home/home.component.html</context>
           <context context-type="linenumber">3</context>
@@ -44,7 +60,7 @@
       </trans-unit>
       <trans-unit id="tranMonTopErrorMsg" datatype="html">
         <source>Please correct the errors below.</source>
-        <target>Please correct the errors below.</target>
+        <target>[FR] Please correct the errors below.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transfer-money/transfer-money.component.html</context>
           <context context-type="linenumber">3</context>
@@ -52,7 +68,7 @@
       </trans-unit>
       <trans-unit id="tranMonFromAccount" datatype="html">
         <source>FROM ACCOUNT</source>
-        <target>FROM ACCOUNT</target>
+        <target>[FR] FROM ACCOUNT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transfer-money/transfer-money.component.html</context>
           <context context-type="linenumber">8</context>
@@ -64,7 +80,7 @@
       </trans-unit>
       <trans-unit id="tranMonToAccount" datatype="html">
         <source>TO ACCOUNT</source>
-        <target>TO ACCOUNT</target>
+        <target>[FR] TO ACCOUNT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transfer-money/transfer-money.component.html</context>
           <context context-type="linenumber">14</context>
@@ -76,7 +92,7 @@
       </trans-unit>
       <trans-unit id="tranMonBeneReqMsg" datatype="html">
         <source>Please enter beneficiary account.</source>
-        <target>Please enter beneficiary account.</target>
+        <target>[FR] Please enter beneficiary account.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transfer-money/transfer-money.component.html</context>
           <context context-type="linenumber">17</context>
@@ -84,7 +100,7 @@
       </trans-unit>
       <trans-unit id="tranMonAmount" datatype="html">
         <source>AMOUNT</source>
-        <target>AMOUNT</target>
+        <target>[FR] AMOUNT</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transfer-money/transfer-money.component.html</context>
           <context context-type="linenumber">25</context>
@@ -96,7 +112,7 @@
       </trans-unit>
       <trans-unit id="tranMonAmountReqMsg" datatype="html">
         <source>Please enter amount.</source>
-        <target>Please enter amount.</target>
+        <target>[FR] Please enter amount.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transfer-money/transfer-money.component.html</context>
           <context context-type="linenumber">28</context>
@@ -104,10 +120,18 @@
       </trans-unit>
       <trans-unit id="tranMonAmountOverdraftExceedMsg" datatype="html">
         <source>Please enter a lesser amount. Overdraft limit is exceeded.</source>
-        <target>Please enter a lesser amount. Overdraft limit is exceeded.</target>
+        <target>[FR] Please enter a lesser amount. Overdraft limit is exceeded.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/transfer-money/transfer-money.component.html</context>
           <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="tranMonCardTitle" datatype="html">
+        <source>Make a transfer</source>
+        <target>[FR] Make a transfer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/transfer-money/transfer-money.component.html</context>
+          <context context-type="linenumber">2</context>
         </context-group>
       </trans-unit>
     </body>

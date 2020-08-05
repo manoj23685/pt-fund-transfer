@@ -1,8 +1,8 @@
 
-<pt-card title="Recent Transactions" icon="briefcase">
+<pt-card title="Recent Transactions" i18n-title="@@transListCardTitle"  icon="briefcase">
   <section class="top-section">
     <pt-input-text class="top-section__search" placeholder="Search by typing..."
-      [dataFormControl]="searchField">
+      i18n-placeholder="@@transListSearchInputPlaceholder" [dataFormControl]="searchField">
       <span tabindex="0" *ngIf="searchField.value" class="search-clear-icon" (click)="searchField.setValue('')">x</span>
     </pt-input-text>
     <div class="sort-section">
