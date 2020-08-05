@@ -11,8 +11,8 @@ French: https://manoj23685.github.io/pt-fund-transfer/fr/
 
 To set it up in local:  
 1. Download the code from develop.  
-2.`npm install`  
-3.`npm start`  
+2. `npm install`  
+3. `npm start`  
 4. Run the app in http://localhost://4200 in browser.  
   
 To test:
