@@ -1,8 +1,6 @@
-# PtFundTransfer
+# Peachtree Fund Transfer
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.  
-
-Peachtree Fund Transfer application.  
 
 
 ## Set up and run/test the app
@@ -11,14 +9,14 @@ The app is deployed in below urls:
 English: https://manoj23685.github.io/pt-fund-transfer/en-CA/  
 French: https://manoj23685.github.io/pt-fund-transfer/fr/  
 
-To set it up in local:
+To set it up in local:  
 1.download the code from develop  
-2.npm install  
-3.npm start  
+2.`npm install`  
+3.`npm start`  
 4.open http://localhost://4200  
   
 To test:
-npm run test  
+`npm run test`  
 or  
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
