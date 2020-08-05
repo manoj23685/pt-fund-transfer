@@ -5,14 +5,16 @@
       [dataFormControl]="searchField">
       <span tabindex="0" *ngIf="searchField.value" class="search-clear-icon" (click)="searchField.setValue('')">x</span>
     </pt-input-text>
-    <label class="top-section__label font-reg">Sort by</label>
-    <button class="top-section__button" 
-            [ngClass]="sortBy === 'transactionDate' && sortDir"
-            (click)="updateSort('transactionDate')">DATE</button>
-    <button class="top-section__button" [ngClass]="sortBy === 'merchant' && sortDir"
-            (click)="updateSort('merchant')">BENEFICIARY</button>
-    <button class="top-section__button" [ngClass]="sortBy === 'amount' && sortDir" 
-            (click)="updateSort('amount')">AMOUNT</button>
+    <div class="sort-section">
+      <label class="top-section__label font-reg" i18n="@@transListSortBy">Sort by</label>
+      <button class="top-section__button" 
+              [ngClass]="sortBy === 'transactionDate' && sortDir"
+              (click)="updateSort('transactionDate')" i18n="@@transListDateBtn">DATE</button>
+      <button class="top-section__button" [ngClass]="sortBy === 'merchant' && sortDir"
+              (click)="updateSort('merchant')" i18n="@@transListBeneBtn">BENEFICIARY</button>
+      <button class="top-section__button" [ngClass]="sortBy === 'amount' && sortDir" 
+              (click)="updateSort('amount')" i18n="@@transListAmountBtn">AMOUNT</button>
+    </div>        
   </section>
   <div *ngFor="let trans of transactions | filterTransactions : searchField.value: sortBy: sortDir" class="trans" [style.border-left]="'7px solid ' + trans.categoryCode">
     <span class="trans__date">{{convertDate(trans.transactionDate)}}</span>

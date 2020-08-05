@@ -10,8 +10,9 @@ export class InputTextComponent implements OnInit, ControlValueAccessor {
 
   @Input() placeholder: string = '';
   @Input() leftSymbol: string;
+  @Input() inputId: string;
   @Input() dataFormControl: FormControl;
-
+  
   value;
   disabled: boolean;
   onTouched = () => {};

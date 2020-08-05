@@ -2,16 +2,16 @@
 <pt-card title="Preview" icon="arrows">
   <div class="preview-container">
     <div class="info-row">
-      <label class="font-reg">FROM ACCOUNT</label>
+      <label class="font-reg" i18n="@@tranMonFromAccount">FROM ACCOUNT</label>
       <span>{{formData.fromAccount}}</span>
     </div>
 
     <div class="info-row">
-      <label class="font-reg">TO ACCOUNT</label>
+      <label class="font-reg" i18n="@@tranMonToAccount">TO ACCOUNT</label>
       <span>{{formData.toAccount}}</span>  </div>
 
     <div class="info-row">
-      <label class="font-reg">AMOUNT</label>
+      <label class="font-reg" i18n="@@tranMonAmount">AMOUNT</label>
       <span>{{formData.amount | currency}}</span>  </div>
 
     <input class="submit-btn" type="button" value="Transfer" (click)="transferAmount()"/>

@@ -22,7 +22,9 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
+            "localize": true,
             "aot": true,
+            "i18nMissingTranslation": "error",
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -121,6 +123,12 @@
               "devServerTarget": "pt-fund-transfer:serve:production"
             }
           }
+        }
+      },
+      "i18n": {
+        "sourceLocale": "en-CA",
+        "locales": {
+          "fr": "src/locale/messages.fr.xlf"
         }
       }
     }},
