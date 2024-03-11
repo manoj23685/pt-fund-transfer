@@ -6,8 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Set up and run/test the app
 
 The app is deployed in below urls:  
-English: https://manoj23685.github.io/pt-fund-transfer/en-CA/  
-French: https://manoj23685.github.io/pt-fund-transfer/fr/  
+English: https://manoj-mn.github.io/pt-fund-transfer/en-CA/  
+French: https://manoj-mn.github.io/pt-fund-transfer/fr/  
 
 To set it up in local:  
 1. Download the code from develop.  
